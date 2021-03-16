@@ -7,6 +7,9 @@ const resolveExternalsPlugin = require('vite-plugin-resolve-externals');
 const { genScssOptions, genHtmlOptions } = require('./config');
 const projectRootDir = path.resolve(__dirname);
 
+// external compontents for Vuetify
+import ViteComponents, { VuetifyResolver } from 'vite-plugin-components'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -21,6 +24,11 @@ export default defineConfig({
     }),
     injectHtml({
       injectData: genHtmlOptions('vite'),
+    }),
+    ViteComponents({
+      customComponentResolvers: [
+        VuetifyResolver(),
+      ]
     }),
   ],
   css: {
