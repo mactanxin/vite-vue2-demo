@@ -2,9 +2,9 @@
 # Vite-Vue2-demo
 开发环境vite，webpack打包。
 
-TL;DR
+TL;DR  
 This is a boilerplate project using Vite 2 and Vue 2.x with Vuetify 2.x  
-Use Vite 2 for development enviroment and Webpack for prod building.  
+Use Vite 2 for development enviroment and Webpack for prod building.    
 
 
 使用 [Vuetify 2.x](https://vuetifyjs.com/en/) 替换了 Element UI
@@ -21,7 +21,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-# vite启动
+# vite startup
 npm run dev
 ```
 
